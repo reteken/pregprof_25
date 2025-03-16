@@ -1,0 +1,22 @@
+body {
+    font-family: 'JetBrains Mono', monospace !important;
+    background: #f4f4f4 radial-gradient(circle, #ccc 1px, transparent 1px);
+    background-size: 30px 32px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-group1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    max-width: 50%;
+}
+.form-group1 label {
+    text-align: left !important;
+}
