@@ -144,26 +144,20 @@ nike = plt.figure(figsize=(20, 20))
 
 x, y = [], []
 
-for i in range(64):
+for i in range(256):
     x.append(i)
     y.append(i)
 
 
-plt.subplot(4, 4, 1)
-
-for i in range(16):
-    ax = plt.axes(projection="3d")
-
-    ax.subplot(4, 4, i + 1)
-
-    xgrid, ygrid = np.meshgrid(x, y)
-    plt.scatter(
-        xgrid,
-        ygrid,
-        new_array[i],
-        c="g",
-        s=5,
-    )
+ax = plt.axes(projection="3d")
+xgrid, ygrid = np.meshgrid(x, y)
+ax.scatter(
+    xgrid,
+    ygrid,
+    new_array,
+    c="g",
+    s=5,
+)
 
 plt.savefig("test.png")
 
