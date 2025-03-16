@@ -9,10 +9,10 @@
     </head>
    <body>
         <div class="form-group1">
-            <input type="text" class="form-control" placeholder="Введите адрес">
+         <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+         </form>
         </div>
-
-
-
    </body>
 </html>
